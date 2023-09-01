@@ -1,0 +1,62 @@
+<!-- <div class="card">
+  <h5>Vertical</h5>
+  <div class="field">
+    <label for="firstname1">Firstname</label>
+    <mat-form-field appearance="fill">
+      <mat-label>Fill form field</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </div>
+  <div class="field">
+    <label for="lastname1">Lastname</label>
+    <input
+      id="lastname1"
+      type="text"
+      class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    />
+  </div>
+</div> -->
+
+<!-- <div class="grid m-5 ">
+  <div
+    class="col-10 grid nogutter flex justify-center center"
+    style="height: 100%; min-height: 100vh">
+    <form>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Fill form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<div class="container">
+  <form [formGroup] = "form" (ngSubmit) = "saveDetails(form)">
+    <mat-form-field appearance = "standard">
+    <mat-label> Name </mat-label>
+      <input
+        matInput
+        maxlength = "15"
+        inputmode = "tel"
+        placeholder = "Type name"
+        formControlName = "name"
+          #nameInput>
+  </form>
+</div>
+
+<div>{{ form.value | json }}</div>
+  </div>

@@ -1,0 +1,20 @@
+<mat-toolbar
+  color="primary"
+>
+  <button
+    mat-icon-button
+    class="example-icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{ appName }}</span>
+  <span class="nav-spacer"></span>
+  <button
+    *ngFor="let item of menu"
+    mat-icon-button
+    class="example-icon favorite-icon"
+  >
+    <mat-icon [title]="item.name">{{ item.icon }}</mat-icon>
+  </button>
+
+</mat-toolbar>
