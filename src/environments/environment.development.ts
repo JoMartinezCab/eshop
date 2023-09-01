@@ -1,3 +1,4 @@
 export const environment = {
-  appName: 'e-shop'
+  appName: 'e-shop',
+  basicUrl: 'https://dummyjson.com'
 };
